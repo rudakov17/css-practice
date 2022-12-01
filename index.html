@@ -6,11 +6,15 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital@0;1&family=Yeseva+One&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container header-content">
-        <div class="logo">IC "Repair Design Project"</div>
+        <div class="logo yellow-text">IC "Repair Design Project"</div>
         <nav>
           <ul class="header-navigation">
             <li class="header-navigation-item"><a href="#">home</a></li>
@@ -21,21 +25,31 @@
             <li class="header-navigation-item"><a href="#">CONTACTS</a></li>
           </ul>
         </nav>
-        <span class="phone-number">+7 (928) 768-32-39</span>
+        <span class="phone-number yellow-text">+7 (928) 768-32-39</span>
         <button type="button" class="button" id="header-button">
           Request a call
         </button>
       </div>
     </header>
     <main>
-      <section>
-        <h1>Turnkey Repair in the city of Rostov-on-Don</h1>
-        <p>
-          Get ready-made turnkey repairs on time with work time saving up to 45
-          days and 20% from cost of materials due to the organization of work
-        </p>
-        <button type="button" class="button">CALCULATE THE COST</button>
-        <button type="button" class="button">SUBMIT YOUR APPLICATION</button>
+      <section class="turnkey">
+        <div class="container container-turnkey">
+          <h1 id="turnkey-title">
+            Turnkey Repair in the<br />city of
+            <span class="yellow-text">Rostov-on-Don</span>
+          </h1>
+          <p id="turnkey-p">
+            Get ready-made turnkey repairs on time<br />with work time saving up
+            to 45 days and 20% from<br />cost of materials due to the
+            organization of work
+          </p>
+          <button type="button" class="button" id="section1-btn-yellow">
+            CALCULATE THE COST
+          </button>
+          <button type="button" class="button" id="section1-btn-colorless">
+            SUBMIT YOUR APPLICATION
+          </button>
+        </div>
       </section>
       <section>
         <ul>
