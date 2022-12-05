@@ -7,6 +7,16 @@ body * {
   box-sizing: border-box;
 }
 
+p {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 37px;
+
+  color: #363636;
+}
+
 .header {
   background-color: black;
   font-size: 11px;
@@ -194,6 +204,7 @@ body * {
     url(../css-practice/images/image\ 6.jpg);
   margin: 0px auto;
   position: relative;
+  filter: drop-shadow(0px 20px 50px rgba(0, 0, 0, 0.15));
 }
 
 #play-btn {
@@ -322,4 +333,61 @@ body * {
 }
 .yellow-text {
   color: #e3b873;
+}
+
+#orange-line {
+  margin-top: 62px;
+}
+
+#form-p {
+  margin-top: 35px;
+  text-align: center;
+}
+
+#name-phone-form {
+  display: flex;
+  margin-top: 94px;
+}
+
+.label-p {
+  margin: 0px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 21px;
+
+  color: rgba(54, 54, 54, 0.5);
+}
+
+input[type='text']::placeholder {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 23px;
+
+  color: #363636;
+}
+
+#form-btn {
+  height: 51px;
+  width: 200px;
+  padding: 0px;
+  font-style: normal;
+}
+
+#name-phone-form input {
+  margin-right: 54px;
+  width: 231px;
+  height: 30px;
+  border: 0px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+#container-form {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 769px;
 }
