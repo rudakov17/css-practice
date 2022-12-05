@@ -17,6 +17,18 @@ p {
   color: #363636;
 }
 
+h3 {
+  font-family: 'Yeseva One';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 28px;
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #181818;
+}
+
 .header {
   background-color: black;
   font-size: 11px;
@@ -159,6 +171,7 @@ p {
   line-height: 25px;
   text-transform: uppercase;
   margin: 0px;
+  text-align: left;
   color: #e3b873;
 }
 
@@ -191,7 +204,7 @@ p {
   padding-bottom: 13px;
 }
 
-#camera-icon {
+.camera-icon {
   display: block;
   margin: 0px auto 31px;
   /* padding-bottom: 31px; */
@@ -455,3 +468,78 @@ input[type='text']::placeholder {
   opacity: 1;
 }
 /* стилизация чекбокса конец */
+#tyres-title {
+  margin-top: 148px;
+}
+
+.container-tyres {
+  height: 608px;
+  width: 1236px;
+  margin: 0px auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+.part-tyres {
+  height: 608px;
+  width: 392px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.to-do-list {
+  background: #ffffff;
+  box-shadow: 10px 10px 20px rgba(0, 0, 0, 0.03);
+  height: 286px;
+  width: 330px;
+  position: absolute;
+  bottom: 27px;
+  align-self: center;
+}
+
+.to-do-list li {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 25px;
+
+  color: #959595;
+}
+
+.to-do-list ul {
+  padding-left: 50px;
+  margin-top: 0px;
+}
+
+.price-example-tyres {
+  background-color: #e3b873;
+  height: 54px;
+  width: 228px;
+  position: absolute;
+  bottom: 0px;
+  left: 31px;
+  box-shadow: 5px 5px 10px rgba(227, 184, 115, 0.3);
+}
+
+.price-example-tyres h3 {
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 25px;
+  margin: 17px auto;
+}
+
+.tyres-h3 {
+  font-size: 18px;
+  line-height: 25px;
+  text-transform: capitalize;
+  color: #363636;
+  text-align: left;
+  margin: 25px 34px 13px;
+}
+
+.advantages {
+  height: 726px;
+  margin-top: 124px;
+}
