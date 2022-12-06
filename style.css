@@ -35,7 +35,7 @@ h3 {
 }
 
 .container {
-  max-width: 1256px;
+  width: 1256px;
   margin: 0 auto;
 }
 
@@ -357,7 +357,7 @@ h3 {
   text-align: center;
 }
 
-#name-phone-form {
+.name-phone-form {
   display: flex;
   margin-top: 94px;
 }
@@ -390,7 +390,7 @@ input[type='text']::placeholder {
   font-style: normal;
 }
 
-#name-phone-form input {
+.name-phone-form input {
   margin-right: 54px;
   width: 231px;
   height: 30px;
@@ -405,13 +405,13 @@ input[type='text']::placeholder {
   width: 769px;
 }
 
-#container-chekbox {
+.container-chekbox {
   text-align: center;
   padding-right: 20px;
   margin-top: 39px;
 }
 
-#chekbox-text {
+.chekbox-text {
   font-family: 'Nunito Sans';
   font-style: normal;
   font-weight: 400;
@@ -423,21 +423,21 @@ input[type='text']::placeholder {
 }
 
 /* стилизация чекбокса */
-#container-chekbox input[type='checkbox']:checked,
-#container-chekbox input[type='checkbox']:not(:checked) {
+.container-chekbox input[type='checkbox']:checked,
+.container-chekbox input[type='checkbox']:not(:checked) {
   position: absolute;
   left: -9999px;
 }
-#container-chekbox input[type='checkbox']:checked + label,
-#container-chekbox input[type='checkbox']:not(:checked) + label {
+.container-chekbox input[type='checkbox']:checked + label,
+.container-chekbox input[type='checkbox']:not(:checked) + label {
   display: inline-block;
   position: relative;
   padding-left: 28px;
   line-height: 20px;
   cursor: pointer;
 }
-#container-chekbox input[type='checkbox']:checked + label:before,
-#container-chekbox input[type='checkbox']:not(:checked) + label:before {
+.container-chekbox input[type='checkbox']:checked + label:before,
+.container-chekbox input[type='checkbox']:not(:checked) + label:before {
   content: '';
   position: absolute;
   left: 0px;
@@ -447,8 +447,8 @@ input[type='text']::placeholder {
   background-color: #e3b873;
   border-radius: 1px;
 }
-#container-chekbox input[type='checkbox']:checked + label:after,
-#container-chekbox input[type='checkbox']:not(:checked) + label:after {
+.container-chekbox input[type='checkbox']:checked + label:after,
+.container-chekbox input[type='checkbox']:not(:checked) + label:after {
   content: '';
   position: absolute;
   transition: all 0.2s ease;
@@ -461,10 +461,10 @@ input[type='text']::placeholder {
   border-bottom: 2px solid #ffffff;
   transform: rotate(-45deg);
 }
-#container-chekbox input[type='checkbox']:not(:checked) + label:after {
+.container-chekbox input[type='checkbox']:not(:checked) + label:after {
   opacity: 0;
 }
-#container-chekbox input[type='checkbox']:checked + label:after {
+.container-chekbox input[type='checkbox']:checked + label:after {
   opacity: 1;
 }
 /* стилизация чекбокса конец */
@@ -542,4 +542,141 @@ input[type='text']::placeholder {
 .advantages {
   height: 726px;
   margin-top: 124px;
+  background-color: rgb(255, 255, 255);
+  width: 100%;
+}
+
+.advantages-list-back {
+  height: 645px;
+  background-repeat: no-repeat;
+  margin-top: 106px;
+  background-image: url(../css-practice/images/image\ 6.1adv-back.png);
+}
+
+.advantages-list {
+  height: 474px;
+  width: 385px;
+
+  margin-left: 140px;
+  margin-top: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.advantages-form {
+  height: 620px;
+  width: 506px;
+  /* контейнер для формы и свиняшки */
+  margin-top: 115px;
+  position: relative;
+}
+
+.advantages-form-contacts {
+  width: 506px;
+  height: 509px;
+  background-color: #131313;
+  box-shadow: 0px 30px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+}
+
+.container-advantages {
+  width: 1236px;
+  /* background-color: blueviolet; */
+  margin: 106px auto 0px;
+  display: flex;
+  justify-content: space-between;
+
+  height: 752px;
+}
+.circle {
+}
+.advantages-p {
+  font-size: 14px;
+  line-height: 19px;
+  margin: 0px;
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  padding-left: 10px;
+}
+
+.advantages-list-item {
+  height: 50px;
+  display: flex;
+  align-items: center;
+}
+
+#p-form {
+  text-align: center;
+  margin: 0px;
+  color: #ffffff;
+  padding-top: 28px;
+  line-height: 26px;
+}
+.advantages-name {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.advantages-input {
+  background-color: #131313;
+  color: #ffffff;
+  width: 408px;
+}
+.name-phone-email {
+  margin-top: 39px;
+}
+.phone-email {
+  margin-top: 48px;
+}
+.advantages-form-contacts input[type='text']::placeholder {
+  color: #ffffff;
+}
+#second-chekbox {
+  margin: 0px;
+  margin-top: 18px;
+  text-align: left;
+  padding-left: 49px;
+}
+
+#second-chekbox .chekbox-text {
+  color: #ffffff;
+}
+
+.adv-contacts {
+  padding-left: 49px;
+}
+
+#advantages-form-btn {
+  font-size: 13px;
+  line-height: 21px;
+  position: absolute;
+  bottom: 27px;
+  right: 49px;
+  height: 51px;
+  width: 213px;
+  border-radius: 0px;
+  font-style: normal;
+}
+
+#sale-pig {
+  font-family: 'Nunito Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 26px;
+  margin-left: 25px;
+  color: #e3b873;
+
+  text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
+}
+.sale-pig {
+  display: flex;
+  align-items: center;
+  margin-left: 31px;
+}
+
+.pig-text {
+  position: absolute;
+  bottom: 0px;
+  width: 506px;
 }
