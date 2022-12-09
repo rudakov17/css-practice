@@ -29,7 +29,8 @@ h3 {
   color: #181818;
 }
 
-.header {
+.header,
+footer {
   background-color: black;
   font-size: 11px;
 }
@@ -357,7 +358,8 @@ h3 {
   text-align: center;
 }
 
-.name-phone-form {
+.name-phone-form,
+.questions-form {
   display: flex;
   margin-top: 94px;
 }
@@ -369,7 +371,6 @@ h3 {
   font-weight: 400;
   font-size: 13px;
   line-height: 21px;
-
   color: rgba(54, 54, 54, 0.5);
 }
 
@@ -383,7 +384,8 @@ input[type='text']::placeholder {
   color: #363636;
 }
 
-#form-btn {
+#form-btn,
+#questions-form-btn {
   height: 51px;
   width: 200px;
   padding: 0px;
@@ -619,16 +621,22 @@ input[type='text']::placeholder {
 .advantages-input {
   background-color: #131313;
   color: #ffffff;
-  width: 408px;
 }
 .name-phone-email {
   margin-top: 39px;
 }
+
+.name-phone-email,
+.phone-email input {
+  width: 408px;
+}
+
 .phone-email {
   margin-top: 48px;
 }
 .advantages-form-contacts input[type='text']::placeholder {
   color: #ffffff;
+  width: 408px;
 }
 #second-chekbox {
   margin: 0px;
@@ -637,7 +645,11 @@ input[type='text']::placeholder {
   padding-left: 49px;
 }
 
-#second-chekbox .chekbox-text {
+#second-chekbox label {
+  color: #ffffff;
+}
+
+#second-chekbox #third-chekbox .chekbox-text {
   color: #ffffff;
 }
 
@@ -837,19 +849,74 @@ h4 {
     url(./images/city-back.png);
 }
 
-.questions-form {
+.questions-form-container {
   height: 445px;
   width: 883px;
   margin: 80px auto 0px;
   background-color: #181818;
   position: relative;
-  z-index: 2;
+  z-index: 1;
 }
 
 .questions-white {
   width: 100vw;
   height: 10px;
   margin-top: 40px;
+}
+
+.questions-form-title {
+  color: #ffffff;
+  padding-top: 34px;
+  margin: 0px auto;
+}
+
+.questions-form {
+  margin-top: 47px;
+  display: flex;
+  justify-content: center;
+}
+
+#questions-form-name {
+  margin-right: 58px;
+}
+
+.questions-form input {
+  background-color: #181818;
+  color: #ffffff;
+  width: 231px;
+  height: 30px;
+  border: 0px;
+  border-bottom: 1px solid rgba(54, 54, 54, 0.3);
+}
+
+.questions-form label {
+  color: rgba(255, 255, 255, 0.5);
+}
+
+.questions-form input[type='text']::placeholder {
+  color: #ffffff;
+}
+
+.any-question input {
+  width: 517px;
+}
+
+#questions-check-label {
+  color: #ffffff;
+}
+
+#third-chekbox {
+  margin-top: 48px;
+}
+
+#questions-form-btn {
+  margin-top: 51px;
+  border-radius: 0px;
+}
+
+.questions-btn {
+  display: flex;
+  justify-content: center;
 }
 
 /* MAP SECTION */
@@ -860,5 +927,17 @@ h4 {
   background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.72)),
     url(./images/image\ 7.2map-back.png);
   position: relative;
-  z-index: 1;
+  z-index: 0;
+}
+
+.map-title-h3 {
+  margin-top: 0px;
+  padding-top: 275px;
+  color: #e3b873;
+  margin-bottom: 26px;
+}
+
+.map-images {
+  display: block;
+  margin: 0px auto 43px;
 }

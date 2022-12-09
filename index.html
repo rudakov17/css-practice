@@ -509,14 +509,85 @@
       <section class="questions">
         <div class="questions-container">
           <div class="questions-white"></div>
-          <div class="questions-form">
-            <form></form>
+          <div class="questions-form-container">
+            <h3 class="questions-form-title">have any questions?</h3>
+            <form class="questions-form">
+              <div id="questions-form-name">
+                <p class="label-p">
+                  <label>Name</label>
+                </p>
+                <input
+                  type="text"
+                  name="login"
+                  placeholder="What is your name:"
+                />
+              </div>
+              <div>
+                <p class="label-p">
+                  <label>Phone</label>
+                </p>
+                <input
+                  type="text"
+                  name="login"
+                  placeholder="Your phone number:"
+                />
+              </div>
+            </form>
+            <form class="questions-form">
+              <div class="any-question">
+                <p class="label-p">
+                  <label>Question:</label>
+                </p>
+                <input type="text" name="login" placeholder="I want to know:" />
+              </div>
+            </form>
+            <form>
+              <div class="container-form container-chekbox" id="third-chekbox">
+                <input type="checkbox" id="cb3" />
+                <label for="cb3" class="chekbox-text" id="questions-check-label"
+                  >I agree to the processing of personal data</label
+                >
+              </div>
+            </form>
+            <div class="questions-btn">
+              <button type="button" id="questions-form-btn" class="button">
+                SUBMIT
+              </button>
+            </div>
           </div>
         </div>
       </section>
       <section class="map-section">
-        <div class="map-container"></div>
+        <div class="map-container">
+          <h3 class="map-title-h3">
+            Rostov-on-Don, Nansen St., 239 Shopping Center<br />
+            Decorum Tel +7 (928) 768 32 29
+          </h3>
+          <img src="./images/map-section-icon.svg" class="map-images" />
+          <img src="./images/image 7.1map.png" class="map-images" />
+        </div>
       </section>
     </main>
+    <footer>
+      <div class="container header-content">
+        <div class="logo yellow-text">IC "Repair Design Project"</div>
+        <nav>
+          <ul class="header-navigation">
+            <li class="header-navigation-item">
+              <a href="#"><span class="yellow-text">home</span></a>
+            </li>
+            <li class="header-navigation-item"><a href="#">projects</a></li>
+            <li class="header-navigation-item"><a href="#">MEASUREMENT</a></li>
+            <li class="header-navigation-item"><a href="#">team</a></li>
+            <li class="header-navigation-item"><a href="#">REVIEWS</a></li>
+            <li class="header-navigation-item"><a href="#">CONTACTS</a></li>
+          </ul>
+        </nav>
+        <span class="phone-number yellow-text">+7 (928) 768-32-39</span>
+        <button type="button" class="button" id="header-button">
+          Request a call
+        </button>
+      </div>
+    </footer>
   </body>
 </html>
