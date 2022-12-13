@@ -8,7 +8,7 @@ body * {
 }
 
 p {
-  font-family: 'Nunito Sans';
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 18px;
@@ -18,7 +18,7 @@ p {
 }
 
 h3 {
-  font-family: 'Yeseva One';
+  font-family: 'Yeseva One', 'Times New Roman', Times, serif;
   font-style: normal;
   font-weight: 400;
   font-size: 20px;
@@ -40,7 +40,8 @@ footer {
   margin: 0 auto;
 }
 
-.header-content {
+.header-content,
+.footer-content {
   display: flex;
   justify-content: space-between;
   height: 83px;
@@ -72,9 +73,6 @@ footer {
 
 #turnkey-p {
   color: #ffffff;
-  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
-  font-style: normal;
-  font-weight: 400;
   font-size: 22px;
   line-height: 36px;
 }
@@ -89,7 +87,6 @@ footer {
 .container-completed-projects {
   display: flex;
   justify-content: space-between;
-
   width: 1171px;
 }
 
@@ -147,9 +144,6 @@ footer {
 }
 
 .completed-projects-p {
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 14px;
   line-height: 27px;
   color: #ffffff;
@@ -165,12 +159,8 @@ footer {
 }
 
 .completed-projects-h3 {
-  font-family: 'Yeseva One';
-  font-style: normal;
-  font-weight: 400;
   font-size: 18px;
   line-height: 25px;
-  text-transform: uppercase;
   margin: 0px;
   text-align: left;
   color: #e3b873;
@@ -181,9 +171,6 @@ footer {
   position: relative;
 }
 
-/* #container-for-video {
-} */
-
 .container-online-control {
   position: absolute;
   top: -317px;
@@ -193,13 +180,6 @@ footer {
 }
 
 .online-control-title {
-  font-family: 'Yeseva One';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 28px;
-  text-align: center;
-  text-transform: uppercase;
   margin: 0px auto;
   color: #ffffff;
   padding-bottom: 13px;
@@ -208,7 +188,6 @@ footer {
 .camera-icon {
   display: block;
   margin: 0px auto 31px;
-  /* padding-bottom: 31px; */
 }
 
 .container-video {
@@ -237,7 +216,6 @@ footer {
 .div-for-flex {
   display: flex;
   padding-top: 42px;
-  /* justify-content: space-between; */
 }
 
 #right-item {
@@ -257,7 +235,6 @@ footer {
 #arrow-gallery {
   margin-top: 81px;
   width: 205px;
-
   display: flex;
   justify-content: space-between;
 }
@@ -312,21 +289,25 @@ footer {
   border: 1px solid #ffffff;
 }
 
-#header-button {
+#header-button,
+#footer-button {
   height: 37px;
   width: 161px;
 }
 
-.header-navigation {
+.header-navigation,
+.footer-navigation {
   display: flex;
   list-style: none;
 }
 
-.header-navigation-item {
+.header-navigation-item,
+.footer-navigation-item {
   margin-right: 47px;
 }
 
-.header-navigation-item a {
+.header-navigation-item a,
+.footer-navigation-item a {
   text-decoration: none;
   text-transform: uppercase;
   color: white;
@@ -334,7 +315,6 @@ footer {
 
 .logo {
   color: white;
-  /* margin-left: 92px; */
   font-size: 11px;
   text-transform: uppercase;
 }
@@ -366,9 +346,6 @@ footer {
 
 .label-p {
   margin: 0px;
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 400;
   font-size: 13px;
   line-height: 21px;
   color: rgba(54, 54, 54, 0.5);
@@ -380,7 +357,6 @@ input[type='text']::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
-
   color: #363636;
 }
 
@@ -419,12 +395,10 @@ input[type='text']::placeholder {
   font-weight: 400;
   font-size: 14px;
   line-height: 23px;
-  /* or 23px */
-
   color: #181818;
 }
 
-/* стилизация чекбокса */
+/* CHECKBOXES STYLES */
 .container-chekbox input[type='checkbox']:checked,
 .container-chekbox input[type='checkbox']:not(:checked) {
   position: absolute;
@@ -469,7 +443,8 @@ input[type='text']::placeholder {
 .container-chekbox input[type='checkbox']:checked + label:after {
   opacity: 1;
 }
-/* стилизация чекбокса конец */
+/* END OF CHECKBOXES STYLES*/
+
 #tyres-title {
   margin-top: 148px;
 }
@@ -506,7 +481,6 @@ input[type='text']::placeholder {
   font-weight: 400;
   font-size: 13px;
   line-height: 25px;
-
   color: #959595;
 }
 
@@ -558,17 +532,16 @@ input[type='text']::placeholder {
 .advantages-list {
   height: 474px;
   width: 385px;
-
   margin-left: 140px;
   margin-top: 120px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
 }
+
 .advantages-form {
   height: 620px;
   width: 506px;
-  /* контейнер для формы и свиняшки */
   margin-top: 115px;
   position: relative;
 }
@@ -583,11 +556,9 @@ input[type='text']::placeholder {
 
 .container-advantages {
   width: 1236px;
-  /* background-color: blueviolet; */
   margin: 106px auto 0px;
   display: flex;
   justify-content: space-between;
-
   height: 752px;
 }
 
@@ -595,9 +566,6 @@ input[type='text']::placeholder {
   font-size: 14px;
   line-height: 19px;
   margin: 0px;
-  font-family: 'Nunito Sans';
-  font-style: normal;
-  font-weight: 400;
   padding-left: 10px;
 }
 
@@ -614,6 +582,7 @@ input[type='text']::placeholder {
   padding-top: 28px;
   line-height: 26px;
 }
+
 .advantages-name {
   color: rgba(255, 255, 255, 0.5);
 }
@@ -677,7 +646,6 @@ input[type='text']::placeholder {
   line-height: 26px;
   margin-left: 25px;
   color: #e3b873;
-
   text-shadow: 0px 3px 10px rgba(227, 184, 115, 0.15);
 }
 .sale-pig {
@@ -940,4 +908,9 @@ h4 {
 .map-images {
   display: block;
   margin: 0px auto 43px;
+}
+
+/* FOOTER */
+.footer-content {
+  height: 133px;
 }
