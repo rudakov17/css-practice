@@ -9,6 +9,10 @@
       rel="stylesheet"
       href="style.css"
       media="screen and (min-width: 1024px)"
+    />
+    <link
+      rel="stylesheet"
+      media="screen and (max-width: 1023px)"
       href="mobile-style.css"
     />
     <link
@@ -18,7 +22,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-content">
+      <div class="container header-content mobile-container">
         <div class="logo yellow-text">IC "Repair Design Project"</div>
         <nav>
           <ul class="header-navigation">
@@ -40,7 +44,7 @@
     </header>
     <main>
       <section class="turnkey">
-        <div class="container container-turnkey">
+        <div class="container container-turnkey mobile-container">
           <h1 id="turnkey-title">
             Turnkey Repair in the<br />city of
             <span class="yellow-text">Rostov-on-Don</span>
@@ -59,7 +63,7 @@
         </div>
       </section>
       <section class="completed-projects">
-        <div class="container container-completed-projects">
+        <div class="container container-completed-projects mobile-container">
           <div>
             <h2 id="completed-projects-title">Completed<br />projects</h2>
             <p class="completed-projects-p">
@@ -68,7 +72,14 @@
               on the site. For 14 years on in the construction<br />market we
               have made happy more than 1000 families
             </p>
-            <div class="div-for-flex">
+            <div class="mobile-gallery">
+              <img
+                src="./images/image 2mobile-gallery.jpg"
+                class="mob-gall-item"
+              />
+              ><img src="./images/arrows-mob.svg" class="mob-gall-arrws" />
+            </div>
+            <div class="div-for-flex mobile-container">
               <div>
                 <div>
                   <h3 class="completed-projects-h3">City:</h3>
@@ -166,7 +177,10 @@
         </div>
       </section>
       <section id="online-control-section">
-        <div class="container-online-control" id="container-for-video">
+        <div
+          class="container-online-control mobile-container"
+          id="container-for-video"
+        >
           <h3 class="online-control-title">online control</h3>
           <img
             src="images/camera.svg"
@@ -179,47 +193,51 @@
           </div>
         </div>
       </section>
-      <section>
-        <hr id="orange-line" width="55px" size="2px" color="#E3B873" />
-        <p id="form-p">
-          At each facility, a camera is installed that broadcasts the progress
-          of work on the<br />clock. At any time, you can go to our website and
-          monitor the progress of work in<br />your apartment. You can watch the
-          live broadcast from one of our facilities!<br />Leave a request below
-          and you will receive a link to the broadcast.
-        </p>
-        <div class="container-form">
-          <form class="name-phone-form">
-            <div>
-              <p class="label-p">
-                <label>Name</label>
-              </p>
-              <input
-                type="text"
-                name="login"
-                placeholder="What is your name:"
-              />
-            </div>
-            <div>
-              <p class="label-p">
-                <label>Phone</label>
-              </p>
-              <input
-                type="text"
-                name="login"
-                placeholder="Your phone number:"
-              />
-            </div>
-            <div>
-              <button type="button" id="form-btn" class="button">SUBMIT</button>
-            </div>
-          </form>
-        </div>
-        <div class="container-form container-chekbox">
-          <input type="checkbox" id="cb1" />
-          <label for="cb1" class="chekbox-text"
-            >I agree to the processing of personal data</label
-          >
+      <section class="first-form">
+        <div class="mobile-container">
+          <hr id="orange-line" width="55px" size="2px" color="#E3B873" />
+          <p id="form-p">
+            At each facility, a camera is installed that broadcasts the progress
+            of work on the<br />clock. At any time, you can go to our website
+            and monitor the progress of work in<br />your apartment. You can
+            watch the live broadcast from one of our facilities!<br />Leave a
+            request below and you will receive a link to the broadcast.
+          </p>
+          <div class="container-form">
+            <form class="name-phone-form">
+              <div>
+                <p class="label-p">
+                  <label>Name</label>
+                </p>
+                <input
+                  type="text"
+                  name="login"
+                  placeholder="What is your name:"
+                />
+              </div>
+              <div>
+                <p class="label-p">
+                  <label>Phone</label>
+                </p>
+                <input
+                  type="text"
+                  name="login"
+                  placeholder="Your phone number:"
+                />
+              </div>
+              <div>
+                <button type="button" id="form-btn" class="button">
+                  SUBMIT
+                </button>
+              </div>
+            </form>
+          </div>
+          <div class="container-form container-chekbox">
+            <input type="checkbox" id="cb1" />
+            <label for="cb1" class="chekbox-text"
+              >I agree to the processing of personal data</label
+            >
+          </div>
         </div>
       </section>
       <section>
@@ -227,7 +245,7 @@
 
         <img src="../css-practice/images/Vector.svg" class="camera-icon" />
 
-        <div class="container-tyres">
+        <div class="container-tyres mobile-container">
           <div class="part-tyres">
             <img src="../css-practice/images/imageimage900.jpg" />
             <div class="to-do-list">
@@ -569,7 +587,11 @@
             Decorum Tel +7 (928) 768 32 29
           </h3>
           <img src="./images/map-section-icon.svg" class="map-images" />
-          <img src="./images/image 7.1map.png" class="map-images" />
+          <img
+            src="./images/image 7.1map.png"
+            class="map-images"
+            id="map-mobile"
+          />
         </div>
       </section>
     </main>

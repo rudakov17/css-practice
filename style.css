@@ -95,6 +95,10 @@ footer {
   margin-left: 40px;
 }
 
+.mobile-gallery {
+  display: none;
+}
+
 #photo-gallery-btns,
 #completed-projects-title {
   margin: 0px;
