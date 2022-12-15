@@ -175,6 +175,10 @@ p {
   text-align: left;
 }
 
+.completed-projects-h3 {
+  font-size: 14px;
+}
+
 #right-bottom-item {
   padding-top: 17px;
   margin: 0px;
@@ -185,11 +189,19 @@ p {
   display: none;
 }
 
+#completed-projects-title {
+  padding-top: 36px;
+}
+
+#completed-projects-p-title {
+  margin: 22px auto 72px;
+}
+
 /* ONLINE CONTROL SECTION */
 
 .camera-icon {
   display: block;
-  margin: 0px auto 31px;
+  margin: 0px auto 41px;
 }
 
 .container-video {
@@ -217,6 +229,12 @@ p {
   right: 0;
 }
 
+.online-control-title {
+  color: white;
+  padding-top: 58px;
+  margin-bottom: 32px;
+}
+
 /* FIRST FORM */
 
 .first-form {
@@ -225,6 +243,8 @@ p {
 
 #form-p {
   text-align: center;
+  margin: 22px auto 61px;
+  font-size: 11px;
 }
 
 .name-phone-form {
@@ -233,7 +253,51 @@ p {
   max-width: 100%;
 }
 
+.name-phone-form input,
+.questions-form-container input {
+  width: 100%;
+  background-color: #131313;
+  height: 30px;
+  border: 0px;
+  border-bottom: 2px solid rgba(54, 54, 54, 0.3);
+}
+
+#first-mob-cb {
+  margin: 0px auto;
+  width: 340px;
+  max-width: 100%;
+  margin-top: -25px;
+}
+
+#first-mob-cb .chekbox-text,
+#questions-check-label {
+  color: white;
+  font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+}
+
+#form-btn,
+#questions-form-btn {
+  height: 51px;
+  width: 100%;
+  padding: 0px;
+  font-style: normal;
+}
+
+#form-btn {
+  margin: auto;
+  position: relative;
+  top: 60px;
+}
+
 /* TYRES SECTION */
+#tyres-title {
+  color: black;
+  margin-top: 85px;
+  margin-bottom: 40px;
+}
+
 .part-tyres {
   height: 608px;
   width: 392px;
@@ -242,6 +306,7 @@ p {
   flex-direction: column;
   margin: 0px auto;
   max-width: 100%;
+  margin-bottom: 60px;
 }
 
 .to-do-list {
@@ -302,7 +367,7 @@ p {
   margin: 0px auto;
   max-width: 100%;
   position: relative;
-  top: 147px;
+  top: 37px;
 }
 
 .mob-realize-arrow {
@@ -310,16 +375,42 @@ p {
   position: relative;
   z-index: 1;
   margin: 0px auto;
-  top: 20px;
+  max-width: 100%;
+  bottom: 100px;
+}
+
+.realize-list {
+  height: 220px;
 }
 
 /* QUESTIONS STCTION */
 
 .questions-form-title {
   padding-top: 173px;
+  color: white;
+  margin-bottom: 50px;
+}
+
+.questions-form-container {
+  width: 340px;
+  max-width: 100%;
+  margin: 0px auto;
+}
+
+#third-chekbox {
+  margin: 24px auto 64px;
+}
+
+#questions-form-btn {
+  margin-bottom: 40px;
 }
 
 /* MAP SECTION */
+
+.map-title-h3 {
+  margin: 40px auto 30px;
+  font-size: 18px;
+}
 
 #map-mobile {
   max-width: 100%;
@@ -333,5 +424,52 @@ p {
 
 #map-icons {
   width: 90px;
-  margin: 0px auto;
+  margin: 0px auto 49px;
 }
+
+/* CHECKBOXES STYLES */
+.container-chekbox input[type='checkbox']:checked,
+.container-chekbox input[type='checkbox']:not(:checked) {
+  position: absolute;
+  left: -9999px;
+}
+.container-chekbox input[type='checkbox']:checked + label,
+.container-chekbox input[type='checkbox']:not(:checked) + label {
+  display: inline-block;
+  position: relative;
+  padding-left: 28px;
+  line-height: 20px;
+  cursor: pointer;
+}
+.container-chekbox input[type='checkbox']:checked + label:before,
+.container-chekbox input[type='checkbox']:not(:checked) + label:before {
+  content: '';
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 18px;
+  height: 18px;
+  background-color: #e3b873;
+  border-radius: 1px;
+}
+.container-chekbox input[type='checkbox']:checked + label:after,
+.container-chekbox input[type='checkbox']:not(:checked) + label:after {
+  content: '';
+  position: absolute;
+  transition: all 0.2s ease;
+  left: 3px;
+  top: 4px;
+  width: 10px;
+  height: 5px;
+  border-radius: 1px;
+  border-left: 2px solid #ffffff;
+  border-bottom: 2px solid #ffffff;
+  transform: rotate(-45deg);
+}
+.container-chekbox input[type='checkbox']:not(:checked) + label:after {
+  opacity: 0;
+}
+.container-chekbox input[type='checkbox']:checked + label:after {
+  opacity: 1;
+}
+/* END OF CHECKBOXES STYLES*/
