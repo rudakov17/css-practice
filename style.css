@@ -8,6 +8,11 @@ body * {
   box-sizing: border-box;
 }
 
+.mob-realize,
+.mob-realize-arrow {
+  display: none;
+}
+
 p {
   font-family: 'Nunito Sans', Arial, Helvetica, sans-serif;
   font-style: normal;
